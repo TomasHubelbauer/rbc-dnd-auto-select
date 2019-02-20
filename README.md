@@ -166,3 +166,5 @@ Welp, turns out the selection state of the event doesn't affect the DnD behavior
 events need to be clicked once before being actioned no matter what. I requested this changes:
 
 https://github.com/intljusticemission/react-big-calendar/issues/1227
+
+- [ ] https://github.com/DefinitelyTyped/DefinitelyTyped/pull/33225
