@@ -1,10 +1,10 @@
-import React, { ReactElement, ReactChild } from 'react';
+import React from 'react';
 import BigCalendar, { stringOrDate, EventWrapperProps } from 'react-big-calendar';
 import moment from 'moment';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import "react-big-calendar/lib/addons/dragAndDrop/styles.css";
-const withDragAndDrop = require('react-big-calendar/lib/addons/dragAndDrop');
-// TODO: Type this I guess but for this demo I won't bother, it's BigCalendar with onEventDrop and onEventResize extra props
+import withDragAndDrop from 'react-big-calendar/lib/addons/dragAndDrop';
+
 const DragAndDropCalendar = withDragAndDrop(BigCalendar);
 
 type AppProps = {};
