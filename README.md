@@ -1,5 +1,7 @@
 # React Big Calendar Drag and Drop Auto-Select
 
+[**GitHub Pages**](https://tomashubelbauer.github.io/rbc-dnd-auto-select)
+
 This is a stream-of-consciousness sandbox repository where I explore whether the
 React Big Calendar component utilizing the drag and drop addon can be made to
 auto select the event before it is being dragged or resized so that the amount
