@@ -31,5 +31,6 @@
   ],
   "devDependencies": {
     "@types/react-big-calendar": "^0.20.5"
-  }
+  },
+  "homepage": "https://tomashubelbauer.github.io/rbc-dnd-auto-select"
 }
