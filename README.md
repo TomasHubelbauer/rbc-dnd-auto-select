@@ -169,4 +169,14 @@ events need to be clicked once before being actioned no matter what. I requested
 
 https://github.com/intljusticemission/react-big-calendar/issues/1227
 
-- [ ] https://github.com/DefinitelyTyped/DefinitelyTyped/pull/33225
+The above I have since found does not reproduce on the demo site of the calendar
+and even in the RBC source code when checked out locally, installed and ran using
+`npm run examples`. However the demo code is exactly the same as what I have in this
+repo.
+
+I figured maybe there are fixes in trunk which have not made it to NPM yet so I
+tried to link to the local instance of the RBC source code, which I attempted by
+changing its build script to use `set` for environment variables and then running
+`npm run build`. Afterwards, I pointed into the local RBC source directory by running
+`npm install ../react-big-calendar` however this didn't work because it was looking
+for some files which existed in `lib` in `dist` and I don't know why.

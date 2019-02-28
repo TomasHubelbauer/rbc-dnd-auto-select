@@ -10,9 +10,14 @@ const DragAndDropCalendar = withDragAndDrop(BigCalendar);
 type AppProps = {};
 
 type AppState = {
-  events: any[];
-  selected: any;
+  events: CalendarEvent[];
+  selected: CalendarEvent | undefined;
 };
+
+type CalendarEvent = {
+  start: stringOrDate;
+  end: stringOrDate;
+}
 
 export default class App extends React.Component<AppProps, AppState> {
   public readonly state: AppState = {
@@ -23,14 +28,14 @@ export default class App extends React.Component<AppProps, AppState> {
   private readonly localizer = BigCalendar.momentLocalizer(moment);
 
   private readonly components = {
-    eventWrapper: BoundEventWrapperComponent(this),
+    eventWrapper: BoundEventWrapperComponent(this) as any,
   };
 
   public render() {
     return (
       <div className="App">
         <style>{`.rbc-addons-dnd-resize-ns-icon { zoom: 5 !important; }`}</style>
-        <DragAndDropCalendar
+        <DragAndDropCalendar<CalendarEvent>
           localizer={this.localizer}
           components={this.components}
           events={this.state.events}
@@ -52,7 +57,7 @@ export default class App extends React.Component<AppProps, AppState> {
 }
 
 function BoundEventWrapperComponent(app: App) {
-  return class EventWrapperComponent extends React.Component<EventWrapperProps, never> {
+  return class EventWrapperComponent extends React.Component<EventWrapperProps<CalendarEvent>, never> {
     public render() {
       const stockEventWrapper = React.Children.only(this.props.children) as React.ReactElement;
       const oldEventDiv = React.Children.only(stockEventWrapper.props.children) as React.ReactElement;

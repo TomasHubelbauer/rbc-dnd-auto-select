@@ -30,7 +30,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@types/react-big-calendar": "^0.20.5"
+    "@types/react-big-calendar": "^0.20.7"
   },
   "homepage": "https://tomashubelbauer.github.io/rbc-dnd-auto-select"
 }
