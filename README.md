@@ -1,6 +1,28 @@
 # React Big Calendar Drag and Drop Auto-Select
 
+## Running
+
 [**GitHub Pages**](https://tomashubelbauer.github.io/rbc-dnd-auto-select)
+
+## Summarizing
+
+The demo app of RBC (remotely or locally when building from source) does not suffer
+from the problem I experienced. In it, dragging and resizing can happen immediately,
+without having to first click a slot to select it.
+
+In my repository, this behavior is not preserved and click to select is needed,
+but only every other time.
+
+My suspicion is that I am either using the calendar in a wrong way, which I cannot
+identify though, as my use and the use of it in the DnD demo looks the same to me,
+or the artifacts on NPM differ from the repository and this difference causes the
+difference in the functionality.
+
+I have captured this for discussing in an issue in the RBC repository:
+
+https://github.com/intljusticemission/react-big-calendar/issues/1227
+
+## Exploring
 
 This is a stream-of-consciousness sandbox repository where I explore whether the
 React Big Calendar component utilizing the drag and drop addon can be made to
