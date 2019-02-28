@@ -180,3 +180,10 @@ changing its build script to use `set` for environment variables and then runnin
 `npm run build`. Afterwards, I pointed into the local RBC source directory by running
 `npm install ../react-big-calendar` however this didn't work because it was looking
 for some files which existed in `lib` in `dist` and I don't know why.
+
+## Deploying
+
+- `npm run build`
+- Delete `docs` if it exists
+- Rename `build` to `docs`
+- Push to the origin
