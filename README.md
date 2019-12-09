@@ -1,10 +1,6 @@
 # React Big Calendar Drag and Drop Auto-Select
 
-## Running
-
-[**GitHub Pages**](https://tomashubelbauer.github.io/rbc-dnd-auto-select)
-
-## Summarizing
+[**LIVE**](https://tomashubelbauer.github.io/rbc-dnd-auto-select)
 
 The demo app of RBC (remotely or locally when building from source) does not suffer
 from the problem I experienced. In it, dragging and resizing can happen immediately,
